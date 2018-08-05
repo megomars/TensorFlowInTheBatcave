@@ -47,10 +47,17 @@ outputs=np.array([
 ])
 
 #Train the network
-my_network.fit(inputs,outputs,epochs=5000)
+#my_network.fit(inputs,outputs,epochs=5000)
 
 #Export a file
-my_network.save_weights('meals.h5')
+#my_network.save_weights('meals.h5')
+
+#Check the accuracy of our model
+my_network.load_weights('meals.h5')
+print(my_network.predict(np.array([
+    [1,0,0,0,0,1]
+])))
+
 
 #free up resources
 keras.backend.clear_session()
