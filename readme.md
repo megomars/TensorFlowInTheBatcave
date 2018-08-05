@@ -148,3 +148,8 @@ Run the script again. Now run the Python file with python network1.py
 
 ## Example 2
 Next we will train a NN to classify zoo animals based on the following dataset: [Zoo animal classification dataset](https://www.kaggle.com/uciml/zoo-animal-classification)
+
+## Example 3
+Convolutional NN for image classification based on the following dataset: [Fruits 360 Dataset](https://www.kaggle.com/moltean/fruits)
+
+![Image classification neural network](example3.png)
