@@ -6,13 +6,13 @@ The first step is to install a virtual environment on your machine
 
 ```Python
 pip install virtualenv
-virtualenv my_tf_environment
-cd my_tf_environment
-source bin/activate
+virtualenv my_tf_environment # create a virtual environment
+cd my_tf_environment 
+source bin/activate # You must activate the environment every time you open a new terminal window.
 
-# Now we can install Tensorflow
+# Now we can install Tensorflow - other dependencies such as numpy are installed
 pip install tensorflow
-# save and restore tensorflow neural networks
+# save and restore tensorflow neural networks with the h5py module
 pip install h5py
 # easier to read and manage data
 pip install pandas
@@ -142,14 +142,28 @@ print(my_network.predict(np.array([
 #free up resources
 keras.backend.clear_session()
 ```
+First run the following script:
+python meals_train.py
 
-Run the script again. Now run the Python file with python network1.py
+Next run the following script:
+python meals_validate.py
 ![result from Python network1.py](mealtest.png)
 
 ## Example 2
 Next we will train a NN to classify zoo animals based on the following dataset: [Zoo animal classification dataset](https://www.kaggle.com/uciml/zoo-animal-classification)
 
+First run the following script:
+python animals_train.py
+
+Next run the following script:
+python animals_validate.py
+
 ## Example 3
 Convolutional NN for image classification based on the following dataset: [Fruits 360 Dataset](https://www.kaggle.com/moltean/fruits)
 
+First run the following script:
+python fruits_train.py
+
+Next run the following script:
+python fruits_validate.py
 ![Image classification neural network](example3.png)
